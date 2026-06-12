@@ -1,0 +1,7 @@
+{
+  "name": "m11s-io-js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
