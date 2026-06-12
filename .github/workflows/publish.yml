@@ -19,6 +19,9 @@ jobs:
           node-version: '22'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Upgrade npm (trusted publishing requires npm >= 11.5.1)
+        run: npm install -g npm@latest
+
       - name: Install dependencies
         run: npm ci
 
@@ -32,9 +35,6 @@ jobs:
 
       - name: Build
         run: npm run build -w packages/${{ steps.pkg.outputs.package }}
-
-      - name: Remove auth token so npm uses OIDC trusted publishing
-        run: sed -i '/authToken/d' ~/.npmrc
 
       - name: Publish
         run: npm publish --access public --provenance
