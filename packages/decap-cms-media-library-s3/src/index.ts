@@ -19,7 +19,8 @@ const S3MediaLibrary = {
   name: 's3',
 
   init({ config = {}, handleInsert }: InitArgs): Instance {
-    const uploadUrl = config.upload_url ?? 'http://localhost:8082/upload';
+    const uploadUrl = config.upload_url;
+    if (!uploadUrl) throw new Error('decap-cms-media-library-s3: upload_url is required in media_library.config');
 
     const input = document.createElement('input');
     input.type = 'file';
