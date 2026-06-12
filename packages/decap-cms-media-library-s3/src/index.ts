@@ -4,7 +4,7 @@ interface Config {
 
 interface InitArgs {
   config?: Config;
-  handleInsert: (url: string) => void;
+  handleInsert: (asset: { url: string; path: string }) => void;
 }
 
 interface Instance {
@@ -38,7 +38,7 @@ const S3MediaLibrary = {
         const res = await fetch(uploadUrl, { method: 'POST', body: formData });
         const data = await res.json();
         if (data.error) throw new Error(data.error);
-        handleInsert(data.url);
+        handleInsert({ url: data.url, path: data.url });
       } catch (err) {
         console.error('S3 upload failed:', err);
         alert(`Upload failed: ${(err as Error).message}`);
