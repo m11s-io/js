@@ -33,6 +33,9 @@ jobs:
       - name: Build
         run: npm run build -w packages/${{ steps.pkg.outputs.package }}
 
+      - name: Remove auth token so npm uses OIDC trusted publishing
+        run: sed -i '/authToken/d' ~/.npmrc
+
       - name: Publish
         run: npm publish --access public --provenance
         working-directory: ${{ steps.pkg.outputs.dir }}
