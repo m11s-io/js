@@ -18,6 +18,10 @@
     "minio",
     "media-library"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m11s-io/js"
+  },
   "license": "MIT",
   "devDependencies": {
     "tsup": "^8"

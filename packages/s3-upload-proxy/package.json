@@ -20,6 +20,10 @@
     "upload",
     "proxy"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m11s-io/js"
+  },
   "license": "MIT",
   "dependencies": {
     "@aws-sdk/client-s3": "^3",
