@@ -1,6 +1,6 @@
 {
   "name": "@m11s-io/decap-cms-media-library-s3",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "S3-compatible media library plugin for Decap CMS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

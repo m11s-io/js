@@ -1,9 +1,9 @@
-interface Options {
+interface Config {
   upload_url?: string;
 }
 
 interface InitArgs {
-  options?: Options;
+  config?: Config;
   handleInsert: (url: string) => void;
 }
 
@@ -18,8 +18,8 @@ interface Instance {
 const S3MediaLibrary = {
   name: 's3',
 
-  init({ options = {}, handleInsert }: InitArgs): Instance {
-    const uploadUrl = options.upload_url ?? 'http://localhost:8082/upload';
+  init({ config = {}, handleInsert }: InitArgs): Instance {
+    const uploadUrl = config.upload_url ?? 'http://localhost:8082/upload';
 
     const input = document.createElement('input');
     input.type = 'file';
