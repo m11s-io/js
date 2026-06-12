@@ -1,8 +1,7 @@
 {
   "name": "@m11s-io/s3-upload-proxy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "HTTP-to-S3 upload proxy — accepts multipart file uploads and stores them in any S3-compatible store",
-  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "s3-upload-proxy": "dist/index.js"

@@ -32,7 +32,7 @@ app.use(cors());
 
 const upload = multer({ storage: multer.memoryStorage() });
 
-app.post('/upload/:tenant?', upload.single('file'), async (req, res) => {
+app.post('/upload/:tenant', upload.single('file'), async (req, res) => {
   if (!req.file) {
     res.status(400).json({ error: 'No file provided' });
     return;
