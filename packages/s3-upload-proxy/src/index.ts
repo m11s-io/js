@@ -3,6 +3,7 @@ import express from 'express';
 import multer from 'multer';
 import cors from 'cors';
 import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
+import { buildPublicUrl } from './url';
 
 const {
   S3_ENDPOINT,
@@ -50,7 +51,7 @@ app.post('/upload/:tenant', upload.single('file'), async (req, res) => {
       Body: buffer,
       ContentType: mimetype,
     }));
-    res.json({ url: `${S3_PUBLIC_URL}/${key}` });
+    res.json({ url: buildPublicUrl(S3_PUBLIC_URL, key) });
   } catch (err) {
     console.error('Upload error:', (err as Error).message);
     res.status(500).json({ error: (err as Error).message });
