@@ -1,9 +1,5 @@
-interface Config {
-  upload_url?: string;
-}
-
 interface InitArgs {
-  config?: Config;
+  options?: { config?: { upload_url?: string } };
   handleInsert: (url: string) => void;
 }
 
@@ -18,8 +14,8 @@ interface Instance {
 const S3MediaLibrary = {
   name: 's3',
 
-  init({ config = {}, handleInsert }: InitArgs): Instance {
-    const uploadUrl = config.upload_url;
+  init({ options = {}, handleInsert }: InitArgs): Instance {
+    const uploadUrl = options.config?.upload_url;
     if (!uploadUrl) throw new Error('decap-cms-media-library-s3: upload_url is required in media_library.config');
 
     const input = document.createElement('input');
