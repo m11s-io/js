@@ -29,12 +29,12 @@
     "@aws-sdk/client-s3": "3.1067.0",
     "cors": "2.8.6",
     "express": "5.2.1",
-    "multer": "1.4.4"
+    "multer": "2.3.0"
   },
   "devDependencies": {
     "@types/cors": "2.8.19",
     "@types/express": "5.0.6",
-    "@types/multer": "1.4.13",
+    "@types/multer": "2.3.0",
     "tsup": "9.0.0",
     "@typescript/native": "npm:typescript@7.0.2"
   }
