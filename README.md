@@ -1,6 +1,6 @@
 # m11s JavaScript Packages
 
-[![Publish to npm](https://github.com/m11s-io/js/actions/workflows/publish.yml/badge.svg)](https://github.com/m11s-io/js/actions/workflows/publish.yml)
+[![Publish to npm](https://github.com/m11s-io/js/actions/workflows/publish.yml/badge.svg)](https://www.npmjs.com/org/m11s-io)
 
 | Package | Description | Version |
 |---------|-------------|---------|
