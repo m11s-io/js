@@ -21,7 +21,7 @@ jobs:
   publish:
     timeout-minutes: 60
     runs-on: ubuntu-26.04
-    container: node:26.3.0
+    container: node:26.3.0@sha256:f9a1756160a9e1c3dca456bc0b185bf8f2f112a6771c694df87288046f4306f1
     permissions:
       contents: read
       id-token: write
