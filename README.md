@@ -1,6 +1,7 @@
 # m11s JavaScript Packages
 
-[![Publish to npm](https://github.com/m11s-io/js/actions/workflows/publish.yml/badge.svg)](https://www.npmjs.com/org/m11s-io)
+[![npm registry](https://img.shields.io/badge/npm-registry-CB3837?logo=npm&logoColor=white)](https://www.npmjs.com/org/m11s-io)
+[![Publish pipeline](https://github.com/m11s-io/js/actions/workflows/publish.yml/badge.svg)](https://github.com/m11s-io/js/actions/workflows/publish.yml)
 
 | Package | Description | Version |
 |---------|-------------|---------|
