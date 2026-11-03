@@ -77,6 +77,8 @@ when source files change.
 
 Packages are built with Bun and published to npm by GitHub Actions when a
 version tag is pushed. The workflow publishes with npm's GitHub OIDC trusted
-publishing and provenance. Tag names use the package directory followed by the version, for
-example `s3-upload-proxy/v0.1.3` or `decap-cms-media-library-s3/v0.1.7`.
+publishing and provenance. Tag names use the package directory followed by the
+version, for example `s3-upload-proxy/v0.1.3` or
+`decap-cms-media-library-s3/v0.1.7`. Run the workflow manually to build and
+pack a selected package without publishing it.
 Package versions are maintained in each package's `package.json`.
