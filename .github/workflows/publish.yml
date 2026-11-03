@@ -51,7 +51,7 @@ jobs:
       - name: Publish
         run: |
           if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
-            npm publish --access public --dry-run
+            npm pack --dry-run
           else
             npm publish --access public --provenance
           fi
