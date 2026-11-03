@@ -32,7 +32,7 @@
     "type": "git",
     "url": "https://github.com/m11s-io/js"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@typescript/native": "npm:typescript@7.0.2",
     "tsup": "9.0.0",
