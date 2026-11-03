@@ -36,6 +36,6 @@
     "@types/express": "5.0.6",
     "@types/multer": "1.4.13",
     "tsup": "9.0.0",
-    "typescript": "5.9.3"
+    "@typescript/native": "npm:typescript@7.0.2"
   }
 }
