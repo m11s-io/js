@@ -1,7 +1,7 @@
 {
   "name": "@m11s-io/s3-upload-proxy",
   "version": "0.1.3",
-  "description": "HTTP-to-S3 upload proxy — accepts multipart file uploads and stores them in any S3-compatible store",
+  "description": "HTTP upload proxy for S3-compatible storage, including Amazon S3, Cloudflare R2, and MinIO",
   "main": "dist/index.js",
   "bin": {
     "s3-upload-proxy": "dist/index.js"
@@ -16,6 +16,8 @@
   },
   "keywords": [
     "s3",
+    "r2",
+    "cloudflare",
     "minio",
     "upload",
     "proxy"
