@@ -1,6 +1,7 @@
 {
   "name": "m11s-io-js",
   "private": true,
+  "packageManager": "bun@1.4.4",
   "workspaces": [
     "packages/*"
   ]

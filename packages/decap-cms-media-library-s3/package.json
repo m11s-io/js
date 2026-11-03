@@ -19,7 +19,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "test": "npm run build && node --test test/*.test.mjs"
+    "test": "bun run build && bun test test/*.test.mjs"
   },
   "keywords": [
     "decap-cms",
